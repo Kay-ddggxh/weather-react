@@ -18,7 +18,7 @@ export default function App() {
         </div>
         <span className="open-source-link">
           <a
-            href="https://github.com/Kathrin-ddggxh/weather-app"
+            href="https://github.com/Kathrin-ddggxh/weather-react"
             target="_blank"
           >
             Open-source code{" "}
