@@ -13,6 +13,7 @@ export default function Search() {
                 aria-describedby="emailHelp"
                 placeholder="Enter your city here"
                 autoComplete="off"
+                autoFocus="on"
               />
             </div>
           </div>

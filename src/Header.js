@@ -1,16 +1,8 @@
 import React from "react";
 import "./Header.css";
+import FormattedDate from "./FormattedDate";
 
-export default function Header() {
-  let weatherData = {
-    temperature: 9,
-    city: "Dublin",
-    time: "Sunday 10:00",
-    description: "cloudy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-    humidity: 80,
-    wind: 12,
-  };
+export default function Header(props) {
   return (
     <div className="Header">
       <header className="border rounded mt-2">
@@ -37,7 +29,9 @@ export default function Header() {
         <div className="row">
           <div className="col-6">
             <h3>{weatherData.city}</h3>
-            <section className="time">{weatherData.time}</section>
+            <section className="time">
+              <FormattedDate date={weatherData.date} />
+            </section>
           </div>
           <div className="col-6">
             <h4>{weatherData.description}</h4>
