@@ -10,7 +10,7 @@ export default function Header(props) {
           <div className="col-6">
             <h1>
               <span className="current-temperature">
-                {weatherData.temperature}
+                {props.data.temperature}
               </span>
               <span className="temp-units">
                 <a href="/" className="active">
@@ -22,25 +22,25 @@ export default function Header(props) {
           </div>
           <div className="col-6">
             <h2>
-              <img src={weatherData.imgUrl} alt={weatherData.description}></img>
+              <img src={props.data.iconUrl} alt={props.data.description}></img>
             </h2>
           </div>
         </div>
         <div className="row">
           <div className="col-6">
-            <h3>{weatherData.city}</h3>
+            <h3>{props.data.city}</h3>
             <section className="time">
-              <FormattedDate date={weatherData.date} />
+              <FormattedDate data={props.data.date} />
             </section>
           </div>
           <div className="col-6">
-            <h4>{weatherData.description}</h4>
+            <h4>{props.data.description}</h4>
             <ul>
               <li className="extra-info">
-                Humidity: <span>{weatherData.humidity}</span>%
+                Humidity: <span>{props.data.humidity}</span>%
               </li>
               <li className="extra-info">
-                Wind: <span>{weatherData.wind}</span>km/h
+                Wind: <span>{props.data.wind}</span>km/h
               </li>
             </ul>
           </div>
