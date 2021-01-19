@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Header(props) {
   return (
@@ -12,12 +13,7 @@ export default function Header(props) {
               <span className="current-temperature">
                 {props.data.temperature}
               </span>
-              <span className="temp-units">
-                <a href="/" className="active">
-                  °C
-                </a>{" "}
-                |<a href="/">°F</a>
-              </span>
+              <WeatherTemperature celsius={props.data.temperature} />
             </h1>
           </div>
           <div className="col-6">
