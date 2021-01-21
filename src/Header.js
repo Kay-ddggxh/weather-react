@@ -26,7 +26,7 @@ export default function Header(props) {
           <div className="col-6">
             <h3>{props.data.city}</h3>
             <section className="time">
-              <FormattedDate data={props.data.date} />
+              <FormattedDate date={props.data.date} />
             </section>
           </div>
           <div className="col-6">

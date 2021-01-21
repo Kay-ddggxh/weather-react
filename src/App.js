@@ -7,8 +7,6 @@ export default function App() {
     <div className="App">
       <div className="weather-app">
         <Weather defaultCity="Dublin" />
-
-        <script src="src/index.js"></script>
       </div>
       <span className="open-source-link">
         <a
