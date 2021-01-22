@@ -10,9 +10,6 @@ export default function Header(props) {
         <div className="row">
           <div className="col-6">
             <h1>
-              <span className="current-temperature">
-                {props.data.temperature}
-              </span>
               <WeatherTemperature celsius={props.data.temperature} />
             </h1>
           </div>
