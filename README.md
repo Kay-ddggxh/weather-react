@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# React Weather App
+
+First attempt at building Weather App with React for SheCodes React certificate workshop.
+
+Visit the [live site here](https://epic-pare-736aa8.netlify.app)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
